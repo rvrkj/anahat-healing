@@ -63,7 +63,7 @@ const HeroSection = () => {
             <div className="relative">
               <img
                 src={heroImage}
-                alt="Dr. Lata Ningoo - Anahat Healing"
+                alt="Dr. Lata Ningoo - Anāhat Healing"
                 className="relative z-10 h-auto w-full max-w-md rounded-3xl object-cover shadow-elevated lg:max-w-lg"
               />
               {/* Decorative blob */}
