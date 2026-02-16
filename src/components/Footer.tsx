@@ -13,6 +13,7 @@ const footerLinks = {
     { label: "Book Reading Group", href: "#services" },
     { label: "Online Consultations", href: "#contact" },
     { label: "Testimonials", href: "#testimonials" },
+    { label: "FAQs", href: "/faq" },
   ],
 };
 
