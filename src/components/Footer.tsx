@@ -23,7 +23,7 @@ const Footer = () => {
         <div className="grid gap-8 md:grid-cols-3">
           {/* Brand */}
           <div>
-            <img src={anahatLogo} alt="Anahat Healing" className="mb-4 h-16 w-auto" />
+            <img src={anahatLogo} alt="Anāhat Healing" className="mb-4 h-16 w-auto" />
             <p className="mb-4 max-w-xs text-sm text-muted-foreground">
               A refined space for deep healing and soulful transformation. 
               Guiding individuals toward clarity, balance, and self-empowerment.
@@ -64,7 +64,7 @@ const Footer = () => {
 
         <div className="mt-12 flex flex-col items-center justify-between gap-4 border-t border-border pt-8 sm:flex-row">
           <p className="text-xs text-muted-foreground">
-            © {new Date().getFullYear()} Anahat Healing. All rights reserved.
+            © {new Date().getFullYear()} Anāhat Healing. All rights reserved.
           </p>
           <p className="flex items-center gap-1 text-xs text-muted-foreground">
             Made with <Heart className="h-3 w-3 text-primary" /> for healing
