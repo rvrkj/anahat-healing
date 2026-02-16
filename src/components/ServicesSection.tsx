@@ -60,6 +60,21 @@ const services = [
     image: hylImg,
     alt: "Heal Your Life workshop group",
   },
+  {
+    num: "05",
+    title: "Quantum Advanced-Level Therapy",
+    subtitle: "Deep Healing at the Core Level",
+    desc: "The Quantum Advanced-Level Therapy is for those ready to experience deep, transformative healing beyond surface-level concerns. This therapy works at the subconscious and energetic levels, helping release long-held emotional patterns, trauma, and limitations.",
+    bullets: [
+      "Deep emotional release",
+      "Healing of subconscious patterns",
+      "Enhanced clarity, confidence, and alignment",
+      "Transformation in personal and professional life",
+    ],
+    extraDesc: "Clients often experience profound shifts that feel gentle yet deeply liberating. Each session is personalized and guided with care, safety, and compassion.",
+    image: quantumImg,
+    alt: "Quantum advanced-level therapy session",
+  },
 ];
 
 const ServicesSection = () => {
