@@ -1,4 +1,5 @@
 import { Heart } from "lucide-react";
+import anahatLogo from "@/assets/anahat-logo.png";
 
 const footerLinks = {
   services: [
@@ -23,9 +24,7 @@ const Footer = () => {
         <div className="grid gap-8 md:grid-cols-3">
           {/* Brand */}
           <div>
-            <h3 className="mb-4 font-heading text-2xl font-bold text-foreground">
-              Anahat<span className="text-primary">Healing</span>
-            </h3>
+            <img src={anahatLogo} alt="Anahat Healing" className="mb-4 h-16 w-auto" />
             <p className="mb-4 max-w-xs text-sm text-muted-foreground">
               A refined space for deep healing and soulful transformation. 
               Guiding individuals toward clarity, balance, and self-empowerment.
