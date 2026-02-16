@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Menu, X, Phone } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
-import anahatLogo from "@/assets/anahat-logo.jpeg";
+import anahatLogo from "@/assets/anahat-logo.png";
 
 const navLinks = [
   { label: "Home", href: "#home" },
