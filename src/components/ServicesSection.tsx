@@ -3,9 +3,7 @@ import { ArrowRight } from "lucide-react";
 import homeopathyImg from "@/assets/homeopathy.jpg";
 import quantumImg from "@/assets/quantum-healing.jpg";
 import plrImg from "@/assets/past-life-regression.jpg";
-import hylImg from "@/assets/heal-your-life.jpg";
 import quantumAdvImg from "@/assets/quantum-advanced.jpg";
-import quantumFoundImg from "@/assets/quantum-foundation.jpg";
 
 const services = [
   {
@@ -49,21 +47,6 @@ const services = [
   },
   {
     num: "04",
-    title: "Heal Your Life® Workshop",
-    subtitle: "A Journey of Self-Discovery and Empowerment",
-    desc: "The Heal Your Life Workshop is a transformative experience designed to help you reconnect with your inner strength, clarity, and joy. Inspired by deep healing principles, this workshop helps you:",
-    bullets: [
-      "Release emotional blocks",
-      "Develop self-love and confidence",
-      "Improve relationships and self-worth",
-      "Align with your true purpose",
-    ],
-    extraDesc: "This workshop is ideal for anyone seeking personal growth, emotional balance, and a renewed sense of direction in life.",
-    image: hylImg,
-    alt: "Heal Your Life workshop group",
-  },
-  {
-    num: "05",
     title: "Quantum Advanced-Level Therapy",
     subtitle: "Deep Healing at the Core Level",
     desc: "The Quantum Advanced-Level Therapy is for those ready to experience deep, transformative healing beyond surface-level concerns. This therapy works at the subconscious and energetic levels, helping release long-held emotional patterns, trauma, and limitations.",
@@ -76,31 +59,6 @@ const services = [
     extraDesc: "Clients often experience profound shifts that feel gentle yet deeply liberating. Each session is personalized and guided with care, safety, and compassion.",
     image: quantumAdvImg,
     alt: "Quantum advanced-level therapy session",
-  },
-  {
-    num: "06",
-    title: "Quantum Foundation Level Training",
-    subtitle: "Begin Your Journey into Conscious Healing",
-    desc: "The Quantum Foundation Level Training is designed for individuals who wish to understand the fundamentals of quantum healing and conscious awareness. This training helps you awaken your inner healer and understand how energy, thoughts, and intention shape your reality.",
-    bullets: [
-      "Basics of quantum energy and healing",
-      "Understanding consciousness and intention",
-      "Techniques for self-healing and awareness",
-      "Clearing emotional and energetic blockages",
-      "Family Constellations",
-      "Healing Through Trees",
-      "Ho'ponopono Technique",
-      "Distance Healing",
-      "Space Healing",
-    ],
-    extraDesc: "This foundation program empowers you to transform your inner world—and in turn, your outer life. Also equips you to heal others.",
-    whoIsThisFor: [
-      "Anyone beginning their spiritual or healing journey",
-      "Therapists, healers, and wellness practitioners",
-      "Individuals seeking clarity, peace, and self-growth",
-    ],
-    image: quantumFoundImg,
-    alt: "Quantum foundation level training session",
   },
 ];
 
@@ -165,19 +123,6 @@ const ServicesSection = () => {
                 )}
                 {service.extraDesc && (
                   <p className="mb-4 text-muted-foreground leading-relaxed italic">{service.extraDesc}</p>
-                )}
-                {service.whoIsThisFor && (
-                  <div className="mb-6">
-                    <p className="mb-2 text-sm font-semibold text-foreground">Who Is This For?</p>
-                    <ul className="space-y-1">
-                      {service.whoIsThisFor.map((item, idx) => (
-                        <li key={idx} className="flex items-start gap-2 text-sm text-muted-foreground">
-                          <ArrowRight className="mt-0.5 h-3 w-3 shrink-0 text-primary" />
-                          <span>{item}</span>
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
                 )}
                 <a
                   href="#contact"
