@@ -4,6 +4,7 @@ import homeopathyImg from "@/assets/homeopathy.jpg";
 import quantumImg from "@/assets/quantum-healing.jpg";
 import plrImg from "@/assets/past-life-regression.jpg";
 import hylImg from "@/assets/heal-your-life.jpg";
+import quantumAdvImg from "@/assets/quantum-advanced.jpg";
 
 const services = [
   {
@@ -72,7 +73,7 @@ const services = [
       "Transformation in personal and professional life",
     ],
     extraDesc: "Clients often experience profound shifts that feel gentle yet deeply liberating. Each session is personalized and guided with care, safety, and compassion.",
-    image: quantumImg,
+    image: quantumAdvImg,
     alt: "Quantum advanced-level therapy session",
   },
 ];
