@@ -29,7 +29,7 @@ const CTASection = () => {
                 Call: 9825472284
               </a>
               <a
-                href="#contact"
+                href="#tally-open=Y5QjGd&tally-emoji-text=👋&tally-emoji-animation=wave"
                 className="inline-flex items-center gap-2 rounded-full border border-primary-foreground/30 px-7 py-3.5 text-sm font-semibold text-primary-foreground transition-all hover:bg-primary-foreground/10"
               >
                 Book a Session <ArrowRight className="h-4 w-4" />
