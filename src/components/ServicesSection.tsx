@@ -5,6 +5,7 @@ import quantumImg from "@/assets/quantum-healing.jpg";
 import plrImg from "@/assets/past-life-regression.jpg";
 import hylImg from "@/assets/heal-your-life.jpg";
 import quantumAdvImg from "@/assets/quantum-advanced.jpg";
+import quantumFoundImg from "@/assets/quantum-foundation.jpg";
 
 const services = [
   {
@@ -76,6 +77,31 @@ const services = [
     image: quantumAdvImg,
     alt: "Quantum advanced-level therapy session",
   },
+  {
+    num: "06",
+    title: "Quantum Foundation Level Training",
+    subtitle: "Begin Your Journey into Conscious Healing",
+    desc: "The Quantum Foundation Level Training is designed for individuals who wish to understand the fundamentals of quantum healing and conscious awareness. This training helps you awaken your inner healer and understand how energy, thoughts, and intention shape your reality.",
+    bullets: [
+      "Basics of quantum energy and healing",
+      "Understanding consciousness and intention",
+      "Techniques for self-healing and awareness",
+      "Clearing emotional and energetic blockages",
+      "Family Constellations",
+      "Healing Through Trees",
+      "Ho'ponopono Technique",
+      "Distance Healing",
+      "Space Healing",
+    ],
+    extraDesc: "This foundation program empowers you to transform your inner world—and in turn, your outer life. Also equips you to heal others.",
+    whoIsThisFor: [
+      "Anyone beginning their spiritual or healing journey",
+      "Therapists, healers, and wellness practitioners",
+      "Individuals seeking clarity, peace, and self-growth",
+    ],
+    image: quantumFoundImg,
+    alt: "Quantum foundation level training session",
+  },
 ];
 
 const ServicesSection = () => {
@@ -138,7 +164,20 @@ const ServicesSection = () => {
                   </ul>
                 )}
                 {service.extraDesc && (
-                  <p className="mb-6 text-muted-foreground leading-relaxed italic">{service.extraDesc}</p>
+                  <p className="mb-4 text-muted-foreground leading-relaxed italic">{service.extraDesc}</p>
+                )}
+                {service.whoIsThisFor && (
+                  <div className="mb-6">
+                    <p className="mb-2 text-sm font-semibold text-foreground">Who Is This For?</p>
+                    <ul className="space-y-1">
+                      {service.whoIsThisFor.map((item, idx) => (
+                        <li key={idx} className="flex items-start gap-2 text-sm text-muted-foreground">
+                          <ArrowRight className="mt-0.5 h-3 w-3 shrink-0 text-primary" />
+                          <span>{item}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
                 )}
                 <a
                   href="#contact"
@@ -156,15 +195,8 @@ const ServicesSection = () => {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="mt-12 grid gap-4 sm:grid-cols-2"
+          className="mt-12 grid gap-4 sm:grid-cols-1"
         >
-          <div className="rounded-2xl border border-border bg-card p-6 shadow-soft">
-            <h4 className="mb-2 text-lg font-bold text-foreground">Quantum Foundation Level Training</h4>
-            <p className="text-sm text-muted-foreground">
-              Learn the fundamentals of quantum healing and conscious awareness. Awaken your inner healer and understand 
-              how energy, thoughts, and intention shape your reality.
-            </p>
-          </div>
           <div className="rounded-2xl border border-border bg-card p-6 shadow-soft">
             <h4 className="mb-2 text-lg font-bold text-foreground">Free Book Reading Group</h4>
             <p className="text-sm text-muted-foreground">
