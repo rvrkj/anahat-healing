@@ -9,23 +9,33 @@ const services = [
   {
     num: "01",
     title: "Homeopathy Consultation",
-    desc: "A safe, natural, and gentle system of medicine that supports the body's innate intelligence to heal. Instead of suppressing symptoms, it works by identifying the underlying imbalance and correcting it from within.",
+    subtitle: "Experienced • Gentle • Holistic Healing",
+    desc: "Consult Dr. Lata Ningoo, an experienced and trusted Homeopathy doctor in Surat with 20+ years expertise. Natural, safe remedies for chronic illness, allergies, anxiety, hormonal disorders & children's health.",
+    extraDesc: "Homeopathy is a safe, natural, and gentle system of medicine that supports the body's innate intelligence to heal. Instead of suppressing symptoms, it works by identifying the underlying imbalance—physical, emotional, and mental—and correcting it from within.",
     image: homeopathyImg,
     alt: "Homeopathy consultation room",
   },
   {
     num: "02",
+    title: "Past Life Regression Therapy",
+    subtitle: "Healing Beyond Time",
+    desc: "Past Life Regression is one of the most powerful healing modalities. It allows individuals to access subconscious memories that may be influencing present-life challenges.",
+    bullets: [
+      "Release of karmic patterns and emotional burdens",
+      "Deep realizations and soul-level understanding",
+      "Emotional freedom and inner peace",
+      "Closure from unresolved past experiences",
+    ],
+    extraDesc: "Witnessing people free themselves from long-held suffering is one of the most fulfilling aspects of my work.",
+    image: plrImg,
+    alt: "Past life regression therapy session",
+  },
+  {
+    num: "03",
     title: "Quantum Healing Therapy",
     desc: "A rapid and powerful healing modality that works at the subconscious and energetic levels, helping release long-held emotional patterns, trauma, and limitations for profound transformation.",
     image: quantumImg,
     alt: "Quantum healing meditation",
-  },
-  {
-    num: "03",
-    title: "Past Life Regression Therapy",
-    desc: "A powerful therapeutic modality that allows access to subconscious memories influencing your present life. Gain clarity about recurring patterns, emotional challenges, and unexplained fears.",
-    image: plrImg,
-    alt: "Past life regression therapy session",
   },
   {
     num: "04",
@@ -78,10 +88,26 @@ const ServicesSection = () => {
                 <span className="mb-4 inline-block font-heading text-5xl font-bold text-primary/20">
                   {service.num}
                 </span>
+                {service.subtitle && (
+                  <p className="mb-2 text-sm font-semibold uppercase tracking-widest text-primary">{service.subtitle}</p>
+                )}
                 <h3 className="mb-3 text-2xl font-bold text-foreground lg:text-3xl">
                   {service.title}
                 </h3>
-                <p className="mb-6 text-muted-foreground leading-relaxed">{service.desc}</p>
+                <p className="mb-4 text-muted-foreground leading-relaxed">{service.desc}</p>
+                {service.bullets && (
+                  <ul className="mb-4 space-y-2">
+                    {service.bullets.map((bullet, idx) => (
+                      <li key={idx} className="flex items-start gap-2 text-muted-foreground">
+                        <ArrowRight className="mt-1 h-4 w-4 shrink-0 text-primary" />
+                        <span>{bullet}</span>
+                      </li>
+                    ))}
+                  </ul>
+                )}
+                {service.extraDesc && (
+                  <p className="mb-6 text-muted-foreground leading-relaxed italic">{service.extraDesc}</p>
+                )}
                 <a
                   href="#contact"
                   className="inline-flex items-center gap-2 text-sm font-semibold text-primary transition-colors hover:text-foreground"
