@@ -10,10 +10,9 @@ const footerLinks = {
     "Quantum Foundation Training",
   ],
   resources: [
-    "Book Reading Group",
-    "Online Consultations",
-    "FAQs",
-    "Testimonials",
+    { label: "Book Reading Group", href: "#services" },
+    { label: "Online Consultations", href: "#contact" },
+    { label: "Testimonials", href: "#testimonials" },
   ],
 };
 
@@ -53,9 +52,9 @@ const Footer = () => {
             <h4 className="mb-4 text-sm font-semibold uppercase tracking-wider text-foreground">Resources</h4>
             <ul className="space-y-2">
               {footerLinks.resources.map((link) => (
-                <li key={link}>
-                  <a href="#" className="text-sm text-muted-foreground transition-colors hover:text-foreground">
-                    {link}
+                <li key={link.label}>
+                  <a href={link.href} className="text-sm text-muted-foreground transition-colors hover:text-foreground">
+                    {link.label}
                   </a>
                 </li>
               ))}
