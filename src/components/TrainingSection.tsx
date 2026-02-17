@@ -80,11 +80,13 @@ const TrainingSection = () => {
             >
               <div className={`${i % 2 === 1 ? "lg:order-2" : ""}`}>
                 {i === 0 && (
-                  <img
-                    src={hylLogo}
-                    alt="Love Yourself - Heal Your Life®"
-                    className="mb-3 h-16 w-auto object-contain"
-                  />
+                  <div className="mb-3 flex justify-center">
+                    <img
+                      src={hylLogo}
+                      alt="Love Yourself - Heal Your Life®"
+                      className="h-16 w-auto object-contain"
+                    />
+                  </div>
                 )}
                 <img
                   src={training.image}
