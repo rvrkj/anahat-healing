@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
 import hylImg from "@/assets/heal-your-life.jpg";
+import hylLogo from "@/assets/love-yourself-hyl.jpg";
 import quantumFoundImg from "@/assets/quantum-foundation.jpg";
 
 const trainings = [
@@ -78,6 +79,13 @@ const TrainingSection = () => {
               }`}
             >
               <div className={`${i % 2 === 1 ? "lg:order-2" : ""}`}>
+                {i === 0 && (
+                  <img
+                    src={hylLogo}
+                    alt="Love Yourself - Heal Your Life®"
+                    className="mb-3 h-16 w-auto object-contain"
+                  />
+                )}
                 <img
                   src={training.image}
                   alt={training.alt}
