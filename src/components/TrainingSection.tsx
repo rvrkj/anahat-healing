@@ -74,20 +74,21 @@ const TrainingSection = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: i * 0.1 }}
-              className={`grid items-center gap-8 rounded-3xl border border-border bg-card p-6 shadow-soft lg:grid-cols-2 lg:p-10 ${
+              className={`rounded-3xl border border-border bg-card p-6 shadow-soft lg:p-10 ${
                 i % 2 === 1 ? "lg:direction-rtl" : ""
               }`}
             >
+              {i === 0 && (
+                <div className="mb-6 flex justify-center">
+                  <img
+                    src={hylLogo}
+                    alt="Love Yourself - Heal Your Life®"
+                    className="h-16 w-auto object-contain"
+                  />
+                </div>
+              )}
+              <div className={`grid items-center gap-8 lg:grid-cols-2`}>
               <div className={`${i % 2 === 1 ? "lg:order-2" : ""}`}>
-                {i === 0 && (
-                  <div className="mb-3 flex justify-center">
-                    <img
-                      src={hylLogo}
-                      alt="Love Yourself - Heal Your Life®"
-                      className="h-16 w-auto object-contain"
-                    />
-                  </div>
-                )}
                 <img
                   src={training.image}
                   alt={training.alt}
@@ -137,6 +138,7 @@ const TrainingSection = () => {
                 >
                   Enroll Now <ArrowRight className="h-4 w-4" />
                 </a>
+              </div>
               </div>
             </motion.div>
           ))}
