@@ -21,7 +21,7 @@ const HeroSection = () => {
             </p>
             <h1 className="mb-6 text-4xl font-bold leading-tight text-foreground sm:text-5xl lg:text-6xl">
               Compassionate Care,{" "}
-              <span className="italic text-primary">Proven Healing</span>
+              <span className="italic text-accent">Proven Healing</span>
             </h1>
             <p className="mb-8 max-w-lg text-lg leading-relaxed text-muted-foreground">
               A refined space for deep healing and soulful transformation. With over 20 years of experience, 
